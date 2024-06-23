@@ -1,10 +1,10 @@
 <?php
 function connect()
 {
-    $servername = "127.0.0.1";
+    $servername = "localhost";
     $database = "website";
     $username = "root";
-    $password = "JuN*YYITt5443ffeew";
+    $password = "201503";
     // ������� ����������
     $conn = mysqli_connect($servername, $username, $password, $database);
     // Проверяем соединение
