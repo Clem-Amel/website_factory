@@ -30,7 +30,7 @@ function sendWithAttachments($to, $subject, $htmlMessage)
         $headers = "From: yourserver@example.com\r\n";
         $headers .= "MIME-Version: 1.0\r\n"
             . "Content-Type: multipart/mixed; boundary=\"$boundary_text\"" . "\r\n";
-        $body .= "If you can see this, your email client "
+        $body = "If you can see this, your email client "
             . "doesn't accept MIME types!\r\n"
             . $boundary;
 

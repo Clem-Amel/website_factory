@@ -24,7 +24,7 @@ $rowText = selectText($rowTitle[0]['tt']);
                   </div>";
         }
       ?>
-      <img src="<?php echo $rowImage[0]['address']; ?>" alt="Фото завода 'AURORA'" class="imgAbout" />
+      <img src="<?php echo $rowImage[0]['address']; ?>" alt="Фото завода 'FACTORY'" class="imgAbout" />
     <div class="titleAndOpenBtn">
       <div class="textAbout">
         <h3><?php echo $rowTitle[0]['tt']; ?></h3>

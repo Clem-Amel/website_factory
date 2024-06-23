@@ -5,7 +5,7 @@ function connect()
     $database = "website";
     $username = "root";
     $password = "201503";
-    // ������� ����������
+    
     $conn = mysqli_connect($servername, $username, $password, $database);
     // Проверяем соединение
     if (!$conn) {

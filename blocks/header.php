@@ -30,13 +30,13 @@
     <div id="logo">
       <a href="../index.php" title="На главную">
         <img src="./img/logo.png" title="На главную" alt="Логотип"/>
-      <h1 id="Name">AURORA</h1>
+      <h1 id="Name">FACTORY</h1>
       </a>
     </div>
 
     <div id="about">
-      <p id="text1" class="Header_text">+7(48646)7-44-40</p>
-      <p class="Header_text">г.Мценск, ул.Автомагистраль, зд.1у, пом.230</p>
+      <p id="text1" class="Header_text">+7 888 888-88-88</p>
+      <p class="Header_text">г.Орел, ул.Ленина, д. 1</p>
       <br />
   
       <div class="one">
@@ -51,7 +51,6 @@
           </div>
         </div>
         <a href="../index.php?id=-uslugi" class="Header_btn btn_1">Услуги</a>
-        <!-- <a href="../index.php?id=-sup" class="Header_btn">Поставщикам</a> -->
           <a class="open-model-btn-1 Header_btn" id="open-model-btn-1">
               <?php
               if (!isset($_SESSION['ID'])) {

@@ -23,7 +23,7 @@ $rowText = selectText($rowTitel[0]['tt']);
                          </div>";
                 }
                 ?>
-                <h1 class="title">УСЛУГИ ООО "НПО АВРОРА"</h1>       
+                <h1 class="title">УСЛУГИ "FACTORY"</h1>       
                 <div class="text-disc">
                     <p class="usl_text">
                         <?php echo $rowText[0]; ?>

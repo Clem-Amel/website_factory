@@ -150,7 +150,7 @@ $rowText = selectText($rowTitle[0]['tt']);
         <?php
         [$rowImage, $rowTitle] = select("?id=" . $_GET['id'], "ранее");
         ?>
-      <h3 class="titlefoto">AURORA ранее</h3>
+      <h3 class="titlefoto">FACTIRY ранее</h3>
         <?php
         session_start();
         if (isset($_SESSION['ID'])) 
@@ -170,7 +170,7 @@ $rowText = selectText($rowTitle[0]['tt']);
         <?php
         [$rowImage, $rowTitle] = select("?id=" . $_GET['id'], "сейчас");
         ?>
-      <h3 class="titlefoto">AURORA сейчас</h3>
+      <h3 class="titlefoto">FACTORY сейчас</h3>
         <?php
         session_start();
         if (isset($_SESSION['ID']))
@@ -189,7 +189,7 @@ $rowText = selectText($rowTitle[0]['tt']);
     </div>
   </div>
   <div class="city_​life">
-    <h3 class="titlefoto">Участие "AURORA" в жизни города</h3>
+    <h3 class="titlefoto">Участие "FACTORY" в жизни города</h3>
       <?php
       session_start();
       if(isset($_SESSION['ID']))
