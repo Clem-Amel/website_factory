@@ -1,0 +1,112 @@
+footer {
+  background-color: #004524;
+  position: absolute;
+  margin-bottom: 0;
+  left: 0;
+  color: #d0f0c0;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.politic {
+    color: #d0f0c0;
+    text-decoration: none;
+}
+
+.politic:hover {
+  color: rgb(255, 255, 255);
+}
+
+.bglogofooter {
+  position: absolute;
+  margin-left: 2%;
+}
+
+.logofooter {
+  width: 70%;
+  position: relative;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.contactsinfo {
+  position: relative;
+  text-align: right;
+  padding-top: 0;
+  right: 2%;
+  margin-top: 1%;
+  font-size: 16px;
+}
+
+.create-line {
+  margin: 0;
+  width: auto;
+  border-top: 5px solid #d0f0c0;
+  position: relative;
+  margin-left: 10%;
+  margin-right: 2%;
+  border-radius: 10px;
+}
+
+.signature {
+  position: relative;
+  top: 17%;
+  margin-left: 10%;
+  font-size: 16px;
+}
+
+@media (max-width: 949px) and (min-width: 525px){
+  .logofooter {
+    width: 60%;
+}
+
+.signature {
+  margin-left: 15%;
+}
+
+.create-line {
+  margin-left: 15%;
+}
+.contactsinfo {
+  font-size: 12px;
+}
+
+.politic, p {
+  font-size: 12px;
+}
+
+.p {
+  font-size: 12px;
+}
+
+}
+
+@media (max-width: 524px){
+
+  .logofooter {
+    width: 50%;
+  }
+
+  .contactsinfo {
+    font-size: 9px;
+  }
+
+  .politic, p {
+    font-size: 9px;
+  }
+
+  .p {
+    font-size: 9px;
+  }
+
+  .signature {
+    margin-left: 20%;
+  }
+
+  .create-line {
+    margin-left: 20%;
+  }
+}

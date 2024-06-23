@@ -1,0 +1,385 @@
+:root {
+  --color_type_0: rgb(0, 0, 0);
+  --color_type_1: rgb(0, 69, 36);
+  --color_type_2: rgb(208, 240, 192);
+  --color_type_3: rgb(255, 255, 255);
+  --bg_color_type_0: rgb(0, 69, 36);
+  --bg_color_type_1: rgb(187, 223, 176);
+  --bg_color_type_2: rgb(208, 240, 192);
+  --bg_color_type_3: rgb(217, 217, 217);
+  --bg_color_type_4: rgb(255, 255, 255);
+  --bg_color_type_5: rgba(0, 69, 36, 0.8);
+  --bg_color_type_6: rgba(217, 217, 217, 0.298);
+  --bg_color_type_7: rgba(23, 23, 23, 0.368);
+  --border_radius_type_0: 20px 20px 20px 20px;
+  --font_type_0: 400 96px/1.21 "Impact", Helvetica, Arial, serif;
+  --font_type_1: 400 50px/1.22 "Impact", Helvetica, Arial, serif;
+  --font_type_2: 400 40px/1.22 "Impact", Helvetica, Arial, serif;
+  --font_type_3: 400 36px/1.22 "Impact", Helvetica, Arial, serif;
+  --font_type_4: 400 32px/1.21 "Impact", Helvetica, Arial, serif;
+  --font_type_5: 400 24px/1.2 "Impact", Helvetica, Arial, serif;
+  --font_type_6: 400 20px/1.2 "Impact", Helvetica, Arial, serif;
+  --font_type_7: 400 16px/1.25 "Impact", Helvetica, Arial, serif;
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  z-index: 9999;
+  /* color: var(--color_type_1); */
+}
+
+body {
+  background-color: var(--color_type_2);
+}
+
+.block_disc {
+  width: 100%;
+  min-height: 450px;
+  padding-top: 80px;
+}
+
+.titleSotr {
+  margin-left: 5%;
+  padding-top: 3%;
+  color: var(--color_type_1);
+  font-size: 40px;
+  display: inline-block;
+  animation: my_animation 3s;
+  animation-fill-mode: both;
+}
+
+.between {
+  width: 300px;
+  height: 50px;
+}
+
+@keyframes my_animation {
+  from {
+    margin-left: -300px;
+  }
+}
+
+.text-disc {
+  position: absolute;
+  width: 30%;
+  height: auto;
+  background-color: rgba(217, 217, 217, 0.5);
+  border-radius: 20px;
+  margin-left: 5%;
+  margin-top: 2%;
+}
+
+.sotr_text {
+  text-align: justify;
+  color: var(--color_type_1);
+  font-size: 18px;
+  padding: 5%;
+}
+
+.img_sotr {
+  position: relative;
+  float: right;
+  margin-left: 5%;
+  margin-top: 3%;
+  right: 5%;
+  border-radius: 20px;
+}
+
+.city_life {
+  width: 100%;
+  min-height: 600px;
+  background-color: #bbdfb0;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 1100px;
+  width: 100%;
+  position: relative;
+  margin-bottom: 10%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.wrapper i {
+  z-index: 10000;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: rgb(233, 245, 230);
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+
+.wrapper i:active {
+  transform: translateY(-50%) scale(0.85);
+}
+
+.wrapper i:first-child {
+  left: -22px;
+}
+
+.wrapper i:last-child {
+  right: -22px;
+}
+
+.wrapper .carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 3) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 2%;
+  border-radius: 20px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel .card {
+  scroll-snap-align: start;
+  height: 370px;
+  list-style: none;
+  background: rgb(233, 245, 230);
+  cursor: pointer;
+  padding-top: 7%;
+  margin-top: 13%;
+  flex-direction: column;
+  border-radius: 20px;
+}
+
+.carousel .card .img {
+  height: 148px;
+  width: 148px;
+  border-radius: 50%;
+}
+
+.card .img img {
+  width: 250px;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  margin-top: 30px;
+}
+
+.carousel .card h2 {
+  position: relative;
+  top: 80px;
+}
+
+.carousel .card span {
+  padding-top: 90px;
+}
+
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+}
+
+
+#button {
+  cursor: pointer;
+  position: fixed;
+  bottom: 5%;
+  right: 5%;
+  padding: 0.5%;
+  border-radius: 50px;
+  background-color: var(--bg_color_type_3);
+  background-size: 300%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--color_type_1);
+}
+
+#button:hover {
+  background-color: var(--bg_color_type_7);
+}
+
+@media only screen and (max-width: 1200px) {
+    .wrapper {
+        position: relative;
+        width: 70%;
+        padding-top: 5%;
+    }
+
+    .carousel {
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+        .carousel .card {
+            height: 270px;
+            width: calc(100% - 10px);
+        }
+
+    .card .img img {
+        width: 100%;
+    }
+
+    .carousel .card h2 {
+        top: 30px;
+        font-size: 18px;
+    }
+
+    .carousel .card span {
+        padding-top: 40px;
+        font-size: 14px;
+    }
+
+    #left,
+    #right {
+        z-index: 0;
+        display: none;
+    }
+
+    #left {
+        left: 50px;
+    }
+
+    #right {
+        right: 50px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    p {
+        font-size: 14px;
+    }
+
+    h3 {
+        font-size: 20px;
+    }
+
+    .block_disc {
+        min-height: 940px;
+    }
+
+    .titleSotr {
+        font-size: 30px;
+    }
+
+    .img_sotr {
+        width: 90%;
+    }
+
+    .text-disc {
+        width: 90%;
+        margin-top: 80%;
+    }
+
+    .city_life {
+        min-height: 100px;
+        padding-bottom: 8%;
+    }
+
+    .between {
+        display: none;
+    }
+
+    .wrapper {
+        position: relative;
+        width: 70%;
+    }
+
+    .carousel {
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+        .carousel .card {
+            height: 270px;
+            width: calc(100% - 10px);
+        }
+
+    .card .img img {
+        width: 100%;
+    }
+
+    .carousel .card h2 {
+        top: 30px;
+    }
+
+    .carousel .card span {
+        padding-top: 40px;
+    }
+
+    #left,
+    #right {
+        z-index: 0;
+        display: none;
+    }
+
+    #left {
+        left: 50px;
+    }
+
+    #right {
+        right: 50px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .between{
+        display:none;
+    }
+
+    .block_disc{
+        min-height: 700px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+   
+}
