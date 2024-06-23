@@ -1,0 +1,15 @@
+﻿.ard_butons, .line-but {
+    display: flex;
+    justify-content: right;
+}
+
+.ard, .line-but {
+    display: inline-block;
+    width: 50px;
+    margin-right: 50px;
+    text-decoration: none;
+}
+
+.line-but {
+    height:50px;
+}

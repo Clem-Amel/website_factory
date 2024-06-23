@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    background-color: rgb(208, 240, 192);
+}
+
+form {
+    padding-top: 10%;
+    padding-bottom: 20%;
+}
+
+h1,h2{
+    color: rgb(0, 69, 36);
+    padding: 1%;
+    text-align: center;
+}
+
+input {
+    width: 300px;
+    border-radius: 20px;
+    border: 2px solid rgb(0, 69, 36);
+    padding: 1.5%;
+    display: block;
+    margin-bottom: 1.5%;
+}
+
+.up_btn {
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: rgb(0, 69, 36);
+    padding: 1%;
+    margin-bottom: 1.5%;
+    color: whitesmoke;
+    margin-left: 2%;
+    display:block;
+    margin:0 auto;
+}
+
+.up_block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
